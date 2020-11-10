@@ -140,8 +140,8 @@ export const homesQuery = graphql`
     ) {
       ...NewsFragment
     }
-    newsByCareerOportioties: allWordpressWpNews(
-      filter: { categories: { slug: { eq: "career-oportioties" } } }
+    newsByCareerOpportunities: allWordpressWpNews(
+      filter: { categories: { slug: { eq: "career-opportunities" } } }
       limit: 4
       sort: { fields: [modified], order: DESC }
     ) {

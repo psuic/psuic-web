@@ -150,7 +150,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         // News category
         const news = result.data.allWordpressWpNews.edges
         const newsSlugCategories = [
-          'career-oportioties',
+          'career-opportunities',
           'general-news',
           'procurement-news',
           'upcoming-events',

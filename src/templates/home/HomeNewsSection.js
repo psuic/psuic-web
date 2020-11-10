@@ -17,19 +17,19 @@ const subcat = [
     key: 'newsByUpcommingEvents',
   },
   {
-    title: 'general news',
+    title: 'General News',
     slug: '/news/category/general-news',
     key: 'newsByGeneralNews',
   },
   {
-    title: 'procurement news',
+    title: 'Procurement News',
     slug: '/news/category/procurement-news',
     key: 'newsByProcurementNews',
   },
   {
-    title: 'career opportunities',
-    slug: '/news/category/career-oportioties',
-    key: 'newsByCareerOportioties',
+    title: 'Career Opportunities',
+    slug: '/news/category/career-opportunities',
+    key: 'newsByCareerOpportunities',
   },
 ]
 export default class HomeNewsSection extends React.Component {
@@ -81,7 +81,7 @@ export default class HomeNewsSection extends React.Component {
       newsByUpcommingEvents,
       newsByProcurementNews,
       newsByGeneralNews,
-      newsByCareerOportioties,
+      newsByCareerOpportunities,
     } = this.props.newsSection
     return (
       <div className="menubar">
@@ -376,17 +376,17 @@ export default class HomeNewsSection extends React.Component {
                 <MoreNewsButton selecting={2} />
               </div>
               <div>
-                {_.get(newsByCareerOportioties, 0) ? (
-                  <MobileNewsItem showing={_.get(newsByCareerOportioties, 0)} />
+                {_.get(newsByCareerOpportunities, 0) ? (
+                  <MobileNewsItem showing={_.get(newsByCareerOpportunities, 0)} />
                 ) : null}
-                {_.get(newsByCareerOportioties, 1) ? (
-                  <MobileNewsItem showing={_.get(newsByCareerOportioties, 1)} />
+                {_.get(newsByCareerOpportunities, 1) ? (
+                  <MobileNewsItem showing={_.get(newsByCareerOpportunities, 1)} />
                 ) : null}
-                {_.get(newsByCareerOportioties, 2) ? (
-                  <MobileNewsItem showing={_.get(newsByCareerOportioties, 2)} />
+                {_.get(newsByCareerOpportunities, 2) ? (
+                  <MobileNewsItem showing={_.get(newsByCareerOpportunities, 2)} />
                 ) : null}
-                {_.get(newsByCareerOportioties, 3) ? (
-                  <MobileNewsItem showing={_.get(newsByCareerOportioties, 3)} />
+                {_.get(newsByCareerOpportunities, 3) ? (
+                  <MobileNewsItem showing={_.get(newsByCareerOpportunities, 3)} />
                 ) : null}
                 <MoreNewsButton selecting={3} />
               </div>
@@ -403,7 +403,7 @@ HomeNewsSection.propTypes = {
     allNews: PropTypes.array,
     newsByUpcommingEvents: PropTypes.array,
     newsByGeneralNews: PropTypes.array,
-    newsByCareerOportioties: PropTypes.array,
+    newsByCareerOpportunities: PropTypes.array,
     newsByProcurementNews: PropTypes.array,
   }),
 }

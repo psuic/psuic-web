@@ -15,24 +15,24 @@ export default class NewsContainer extends React.Component {
 
     this.subcat = [
       {
-        title: 'upcomming event',
+        title: 'Upcoming Event',
         slug: '/news/category/upcoming-events',
         key: 'upcoming-events',
       },
       {
-        title: 'general news',
+        title: 'General News',
         slug: '/news/category/general-news',
         key: 'general-news',
       },
       {
-        title: 'procurement news',
+        title: 'Procurement News',
         slug: '/news/category/procurement-news',
         key: 'procurement-news',
       },
       {
-        title: 'career oportioties',
-        slug: '/news/category/career-oportioties',
-        key: 'career-oportioties',
+        title: 'Career Opportunities',
+        slug: '/news/category/career-opportunities',
+        key: 'career-opportunities',
       },
     ]
     this.state = {

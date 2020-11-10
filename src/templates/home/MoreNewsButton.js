@@ -13,19 +13,19 @@ const subcat = [
       key: 'newsByUpcommingEvents',
     },
     {
-      title: 'general news',
+      title: 'General News',
       slug: '/news/category/general-news',
       key: 'newsByGeneralNews',
     },
     {
-      title: 'procurement news',
+      title: 'Procurement News',
       slug: '/news/category/procurement-news',
       key: 'newsByProcurementNews',
     },
     {
-      title: 'career opportunities',
-      slug: '/news/category/career-oportioties',
-      key: 'newsByCareerOportioties',
+      title: 'Career Opportunities',
+      slug: '/news/category/career-opportunities',
+      key: 'newsByCareerOpportunities',
     },
   ]
 const MoreNewsButton =({selecting})=>{
